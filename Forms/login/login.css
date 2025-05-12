@@ -1,0 +1,102 @@
+html{
+    background-image: url("/formulario/projeto/Forms/login/images.jpg");
+    font-family: sans-serif;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100%;    
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    color: #296fc3;
+    font-weight: lighter;
+}
+
+form{
+    width: 90%;
+    min-width: 28.125em;
+    max-width: 35em;
+    background-color: #fff;
+}
+
+fieldset{
+    margin: 0;
+    padding: 0;
+    padding: 2em;
+    padding-top: 3em;
+}
+
+label, input, textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label{
+    color: #0e1010;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: small;
+
+}
+
+input, textarea{
+    border: 2px solid transparent;
+    border-bottom-color: #296fc3;
+    padding: .75em;
+    margin: .5em 0 2.5em;
+    color: #fff;
+    outline: 0;
+}
+
+
+legend{
+    padding: .5em;
+    text-align: center;
+    font-weight: bold;
+    color: #8e999a;
+    font-size: 1.3em;
+}
+
+.btn{
+    background-color: #296fc3;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: .7em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 2%; 
+}
+
+.btn1{
+    background-color: #fff;
+    color: #296fc3;
+    font-weight: bold;
+    cursor: pointer;
+    padding: .7em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 2%; 
+}
+
+
+
+
+
+p{
+    color: #0e1010
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
