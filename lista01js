@@ -1,0 +1,124 @@
+
+function Operadores01() {
+    let n1 = parseFloat (prompt ("Digite o num1"))
+    let n2 = parseFloat (prompt ("Digite o num1"))
+    if (!isNaN(n1) && !isNaN(n2) ){
+        alert("soma: " + (n1+n2))
+        alert("subtração: " + (n1-n2))
+        alert("multiplicação: " + (n1*n2))
+        alert("divisão: " + (n1/n2))
+        alert("resto: " + (n1 % n2))
+    }
+
+}
+//Operadores01()
+
+function MaiorIdade02() {
+    let idade = parseInt (prompt ("Digite sua idade, nao minta rapaz"))
+    if (idade < 18){
+        alert ("menor de idade, nao vai pra festa")
+    }else {
+        alert ("pode festar e dirigir")
+    }
+}
+//MaiorIdade02()
+
+function Contador03(){
+    let num = parseInt(prompt("Digite um número inteiro positivo"))
+    for (let i = 1; i <= num; i++){
+        alert (i)
+        //como pede um por linha? talvez esteja se referindo a fazer para o console, mas vou deixar alert pq é mais divertido ver o pop up
+    }
+}
+//Contador03()
+
+function somaImpar04 (){
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    let soma = 0
+    for (let i = 0; i < 20; i++){
+        if (arr[i] % 2 != 0){
+            soma += arr[i]
+        }
+    }
+
+    console.log(soma)
+}
+//somaImpar04()
+
+function calcIMC05(){
+    let peso = parseInt(prompt("insira seu peso: "))
+    let altura = parseInt(prompt("insira sua altura: "))
+    let imc = peso / (altura ** 2)
+
+    if (imc < 18.6){
+        console.log("peso abaixo do normal")
+    } else if (imc < 25){
+        console.log("peso normal")
+    } else {
+        console.log ("sobrepeso")
+    }
+
+}
+//calcIMC05()
+
+function parOuImpar06(){
+    let num = parseInt(prompt("insira um numero inteiro"))
+    if (num % 2 == 0){
+        console.log ("par")
+    } else {
+        console.log("impar")
+    }
+}
+//parOuImpar06()
+
+function contadorRegressivo07 (){
+    let num = parseInt(prompt("Digite um número inteiro positivo"))
+    for (let i = num; i > 0; i--){
+        alert (i)
+
+    }
+}
+//contadorRegressivo07()
+
+
+function mediaNotas08() {
+    let num1 = parseFloat(prompt("insira a primeira nota"))
+    let num2 = parseFloat(prompt("insira a segunda nota"))
+    let num3 = parseFloat(prompt("insira a terceira nota"))
+    let num4 = parseFloat(prompt("insira a quarta nota"))
+    let media = (num1 + num2 + num3 + num4) / 4;
+    console.log("Média:", media);
+    if (media >= 7) {
+        console.log("Aprovado");
+    } else {
+        console.log("Reprovado");
+    }
+}
+//mediaNotas08()
+
+function maior09(){
+    const vetor = []
+    let maior = 0
+    for (let i = 0; i < 10; i++){
+        let aleatorio = (Math.random() * 100)
+        vetor.push(aleatorio)
+        if (vetor[i] > maior){
+            maior = vetor[i]
+        }
+    }
+    alert("O maior número sorteado foi: " + maior)
+
+}
+
+maior09()
+
+function inverterTexto10() {
+    let texto = prompt("insira o texto")
+    let invertido = "";
+    for (let i = texto.length - 1; i >= 0; i--) {
+        invertido += texto[i];
+    }
+    console.log("Invertido:", invertido);
+}
+
+inverterTexto10()
